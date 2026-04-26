@@ -1069,7 +1069,7 @@ h4 {
 
 .scroll-top-btn {
   position: fixed;
-  bottom: 150px;
+  bottom: 80px;
   right: 30px;
   width: 48px;
   height: 48px;
@@ -1101,7 +1101,7 @@ h4 {
 
 @media (max-width: 768px) {
   .scroll-top-btn {
-    bottom: 40px;
+    bottom: 100px;
     right: 20px;
     width: 42px;
     height: 42px;
