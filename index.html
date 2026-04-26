@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <meta name="description"
+        content="Raja S - Frontend Developer specializing in modern, responsive websites for businesses. Explore projects, skills, and services.">
+    <meta name="author" content="Raja S">
+    <title>Raja S | Web Developer</title>
+    <!-- Google Fonts: Inter -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700;14..32,800&display=swap"
+        rel="stylesheet">
+    <!-- Font Awesome 6 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- AOS Scroll Reveal Animation Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <!-- Three.js Core -->
+    <script type="importmap">
+    {
+      "imports": {
+        "three": "https://unpkg.com/three@0.128.0/build/three.module.js"
+      }
+    }
+  </script>
+
+</head>
+
+<body>
+    <!-- SIMPLE LOADING ANIMATION - NO TEXT -->
+    <div class="loading-overlay" id="loadingOverlay">
+        <div class="loader"></div>
+    </div>
+
+    <canvas id="three-bg"></canvas>
+
+    <nav class="navbar" id="navbar">
+        <div class="container nav-container">
+            <a href="#" class="logo">Raja<span class="dot"> </span>S</a>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="nav-menu" id="nav-menu">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#services" class="nav-link">Services</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main>
+        <section id="home" class="hero" data-aos="fade-up" data-aos-duration="1000">
+            <div class="container hero-grid">
+                <div class="hero-content" data-aos="fade-right" data-aos-delay="200">
+                    <div class="hero-badge">✨ Web Developer</div>
+                    <h1 class="hero-title">I build modern websites <br> for businesses <span>🚀</span></h1>
+                    <p class="hero-desc">Helping businesses grow online with fast, responsive, and user-friendly
+                        websites. Let's turn your vision into reality.</p>
+                    <div class="hero-buttons">
+                        <a href="#projects" class="btn btn-primary">View Projects</a>
+                        <a href="#contact" class="btn btn-outline">Contact Me</a>
+                        <a href="#" class="btn btn-outline" id="resumeBtn">Resume <i class="fas fa-download"></i></a>
+                    </div>
+                </div>
+                <div class="hero-image-side" data-aos="fade-left" data-aos-delay="300">
+                    <img src="profile.jpg" alt="Raja S Portrait" class="hero-portrait-img"
+                        onerror="this.src='https://placehold.co/600x600/0f172a/38bdf8?text=Raja+S';">
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="about" data-aos="fade-up" data-aos-duration="800">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">About Me</span>
+                    <h2>Turning ideas into <span class="accent">digital experiences</span></h2>
+                </div>
+                <div class="about-grid">
+                    <div class="about-left">
+                        <div class="about-text">
+                            <p>Hi, I'm <strong>Raja S</strong>, a passionate Frontend Developer from Tamil Nadu, India.
+                                I graduated with a B.Sc in Computer Science from Muthayammal Memorial College.</p>
+                            <p>Over the past years, I've helped numerous small businesses and startups establish a
+                                strong online presence. My approach combines modern design principles with
+                                performance-first development.</p>
+                            <p>My goal is simple: <strong>build websites that drive growth</strong>. Whether you need a
+                                business website, a high-converting landing page, or a complete redesign, I'm here to
+                                help.</p>
+                        </div>
+                        <div class="personal-details">
+                            <div class="detail-item"><i class="fas fa-map-marker-alt"></i> Tamil Nadu, India</div>
+                            <div class="detail-item"><i class="fas fa-graduation-cap"></i> B.Sc Computer Science</div>
+                            <div class="detail-item"><i class="fas fa-laptop-code"></i> <span class="exp-highlight">2+
+                                    Years Experience</span></div>
+                        </div>
+                        <div class="stats-container">
+                            <div class="stat-item"><span class="stat-number">2+</span><span class="stat-label">Projects
+                                    Completed</span></div>
+                            <div class="stat-item"><span class="stat-number">100%</span><span class="stat-label">Client
+                                    Satisfaction</span></div>
+                            <div class="stat-item"><span class="stat-number">24/7</span><span
+                                    class="stat-label">Support</span></div>
+                        </div>
+                    </div>
+                    <div class="about-right">
+                        <div class="professional-img-wrapper">
+                            <img src="IMG_7269.JPG" alt="Raja S" class="about-professional-img"
+                                onerror="this.src='https://placehold.co/600x600/0f172a/38bdf8?text=Raja+S';">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills" class="skills" data-aos="fade-up" data-aos-duration="800">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">Tech Stack</span>
+                    <h2>My <span class="accent">Development Arsenal</span></h2>
+                </div>
+                <div class="skills-grid">
+                    <div class="skill-card"><i class="fab fa-html5"></i>
+                        <h3>HTML5</h3>
+                        <p>Semantic, accessible markup</p>
+                    </div>
+                    <div class="skill-card"><i class="fab fa-css3-alt"></i>
+                        <h3>CSS3</h3>
+                        <p>Flex, Grid, Animations</p>
+                    </div>
+                    <div class="skill-card"><i class="fab fa-js"></i>
+                        <h3>JavaScript</h3>
+                        <p>Interactive experiences</p>
+                    </div>
+                    <div class="skill-card"><i class="fas fa-mobile-alt"></i>
+                        <h3>Responsive Design</h3>
+                        <p>Mobile-first approach</p>
+                    </div>
+                    <div class="skill-card"><i class="fab fa-git-alt"></i>
+                        <h3>Git & GitHub</h3>
+                        <p>Version control</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="services" class="services" data-aos="fade-up" data-aos-duration="800">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">What I Offer</span>
+                    <h2>Services to grow <span class="accent">your business</span></h2>
+                </div>
+                <div class="services-grid">
+                    <div class="service-card">
+                        <div class="service-icon"><i class="fas fa-building"></i></div>
+                        <h3>Business Websites</h3>
+                        <p>Professional, fully responsive websites that showcase your brand.</p>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon"><i class="fas fa-landmark"></i></div>
+                        <h3>Landing Pages</h3>
+                        <p>High-converting, SEO-optimized landing pages for campaigns.</p>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon"><i class="fas fa-sync-alt"></i></div>
+                        <h3>Website Redesign</h3>
+                        <p>Modernize outdated websites with improved UI/UX and performance.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="projects" data-aos="fade-up" data-aos-duration="800">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">Featured Work</span>
+                    <h2>Recent <span class="accent">Projects</span></h2>
+                </div>
+                <div class="projects-grid">
+                    <div class="project-card">
+                        <div class="project-img"><img src="smt.png" alt="Paint Shop"></div>
+                        <div class="project-content">
+                            <h3>Paint Shop Website</h3>
+                            <p>Modern e-commerce style website for a paint shop.</p>
+                            <div class="project-tech"><span>HTML5</span><span>CSS3</span><span>JS</span></div>
+                            <div class="project-links"><a href="https://s-rajaa.github.io/SMT/" target="_blank"
+                                    class="project-link"><i class="fas fa-external-link-alt"></i> Live Demo</a><a
+                                    href="https://github.com/s-rajaa" target="_blank" class="project-link"><i
+                                        class="fab fa-github"></i> GitHub</a></div>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <div class="project-img"><img src="klc.png" alt="Business Launchpad"></div>
+                        <div class="project-content">
+                            <h3>Kids kids learning club</h3>
+                            <p>A modern-style website designed as a college project to help kids learn easily.</p>
+                            <div class="project-tech"><span>HTML5</span><span>CSS3</span><span>JS</span></div>
+                            <div class="project-links"><a href="https://s-rajaa.github.io/kids-learning-club/"
+                                    target="_blank" class="project-link"><i class="fas fa-external-link-alt"></i> Live
+                                    Demo</a><a href="https://github.com/s-rajaa" target="_blank" class="project-link"><i
+                                        class="fab fa-github"></i> GitHub</a></div>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <div class="project-img"><img src="dk.png" alt="Dashboard"></div>
+                        <div class="project-content">
+                            <h3>Dinesh Chicken & Sea Foods</h3>
+                            <p>A clean and professional website showcasing fresh chicken and seafood products..</p>
+                            <div class="project-tech"><span>HTML5</span><span>CSS3</span><span>JS</span></div>
+                            <div class="project-links"><a href="https://s-rajaa.github.io/Dinesh-Chicken-Sea-Foods/"
+                                    target="_blank" class="project-link"><i class="fas fa-external-link-alt"></i> Live
+                                    Demo</a><a href="https://github.com/s-rajaa" target="_blank" class="project-link"><i
+                                        class="fab fa-github"></i> GitHub</a></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="reviews-section">
+                    <div class="section-header" style="margin-top: 2rem;"><span class="section-tag">Testimonials</span>
+                        <h2>What <span class="accent">Clients Say</span></h2>
+                    </div>
+                    <div class="reviews-grid">
+                        <div class="review-card">
+                            <div class="review-icon"><i class="fas fa-quote-left"></i></div>
+                            <div class="review-text">
+                                <p>“I had a great experience using the Paint Shop website. The design is modern and
+                                    attractive, and navigation is very simple. It is easy to explore different paint
+                                    options, colors, and details. The website loads quickly and works well on mobile
+                                    devices too. Overall, a very professional and helpful website.”</p>
+                            </div>
+                            <div class="reviewer">
+                                <div class="reviewer-avatar"><i class="fas fa-user-circle"></i></div>
+                                <div class="reviewer-info">
+                                    <h4>Rajkumar</h4>
+                                    <p>Business Owner</p>
+                                    <div class="review-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                            class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                            class="fas fa-star"></i></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="review-card">
+                            <div class="review-icon"><i class="fas fa-quote-left"></i></div>
+                            <div class="review-text">
+                                <p>“Kids Learning Club website was very nice and a creative idea 👌 for helping children
+                                    learn in a 🤹 creative way. This website was super Raja, I like it very much. It
+                                    also helped my college project. Thank you soo much 🥰.”</p>
+                            </div>
+                            <div class="reviewer">
+                                <div class="reviewer-avatar"><i class="fas fa-user-circle"></i></div>
+                                <div class="reviewer-info">
+                                    <h4>Sowmiya</h4>
+                                    <p>College Student</p>
+                                    <div class="review-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                            class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                            class="fas fa-star"></i></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="review-card">
+                            <div class="review-icon"><i class="fas fa-quote-left"></i></div>
+                            <div class="review-text">
+                                <p>“The website looks really nice and fresh. It’s easy to use and gives a good feel
+                                    about the quality of chicken and seafood. I liked it very much!”</p>
+                            </div>
+                            <div class="reviewer">
+                                <div class="reviewer-avatar"><i class="fas fa-user-circle"></i></div>
+                                <div class="reviewer-info">
+                                    <h4>Dinesh Kumar</h4>
+                                    <p>Business Owner</p>
+                                    <div class="review-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                            class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                            class="fas fa-star"></i></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact" data-aos="fade-up" data-aos-duration="800">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">Get In Touch</span>
+                    <h2>Let's work <span class="accent">together</span></h2>
+                </div>
+                <div class="contact-grid">
+                    <div class="contact-info-card">
+                        <div class="contact-detail"><i class="fas fa-phone-alt"></i>
+                            <div><strong>Phone</strong><br><a href="tel:+919047854498">+91 90478 54498</a></div>
+                        </div>
+                        <div class="contact-detail"><i class="fas fa-envelope"></i>
+                            <div><strong>Email</strong><br><a
+                                    href="mailto:rajaasanthii@gmail.com">rajaasanthii@gmail.com</a></div>
+                        </div>
+                        <div class="contact-detail"><i class="fab fa-github"></i>
+                            <div><strong>GitHub</strong><br><a href="https://github.com/s-rajaa"
+                                    target="_blank">github.com/s-rajaa</a></div>
+                        </div>
+                        <div class="contact-detail"><i class="fab fa-whatsapp"></i>
+                            <div class="wh"><strong>WhatsApp</strong><br>
+                                <a
+                                    href="https://wa.me/919047854498?text=Hello%20Raja%2C%20I%27m%20interested%20in%20your%20web%20development%20services!"
+                                    target="_blank">Clik to chat →</a></div>
+                        </div>
+                    </div>
+                    <div class="contact-form">
+                        <form id="contactForm">
+                            <input type="text" name="entry.1345746856" placeholder="Your Name" required>
+                            <input type="email" name="entry.1117149924" placeholder="Your Email" required>
+                            <textarea name="entry.1773003349" rows="4"
+                                placeholder="Tell me about your project..."></textarea>
+                            <button type="submit" class="btn btn-primary full-width">Send Message <i
+                                    class="fas fa-paper-plane"></i></button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p>© 2025 Raja S — Web Developer.</p>
+                <div class="footer-social">
+                    <a href="https://github.com/s-rajaa" target="_blank"><i class="fab fa-github"></i></a>
+                    <a href="https://wa.me/919047854498" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                    <a href="mailto:rajaasanthii@gmail.com"><i class="fas fa-envelope"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <button class="scroll-top-btn" id="scrollTopBtn"><i class="fas fa-arrow-up"></i></button>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <!-- Three.js Background -->
+    <script type="module" src="script.js">
+
+    </script>
+</body>
+
+</html>
